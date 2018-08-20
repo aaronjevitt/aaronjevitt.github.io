@@ -2526,13 +2526,14 @@ body {
     max-width: 100%; }
 /* line 22, sass/pages/_post.scss */
 .content .leading {
-  margin-bottom: 50px;
+	
+  margin-bottom: 10px;
   color: white;
   font-size: 18px;
   font-size: 1.125em; }
 /* line 27, sass/pages/_post.scss */
 .content p {
-  margin: 0 0 40px; }
+  margin: 0 0 10px; }
 
 /* line 1, sass/pages/_gallery.scss */
 .content.fullwidth {
