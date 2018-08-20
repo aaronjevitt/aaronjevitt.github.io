@@ -1,121 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Aaron Jevitt</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
-	
-	<!--  -->
-	<div class="simpleslide100">
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg01.jpg');"></div>
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg02.jpg');"></div>
-		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg03.jpg');"></div>
-	</div>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>So Noted</title>
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
 
-	<div class="size1 overlay1">
-		<!--  -->
-		<div class="size1 flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-50">
-			<h3 class="l1-txt1 txt-center p-b-25">
-				Coming Soon!
-			</h3>
+	</head>
 
-			<p class="m2-txt1 txt-center p-b-48">
-				We are hard at work trying to get this site ready for you! We are currently undergoing scheduled maintenance.
-			</p>
-
-			<div class="flex-w flex-c-m cd100 p-b-33">
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 days">35</span>
-					<span class="s2-txt1">Days</span>
+	<body class="header-collapse">
+		
+		<div id="site-content">
+			<header class="site-header">
+				<div class="container">
+					<a href="index.html" id="branding">
+						<img src="dummy/logo.png" alt="Site Title">
+						
+					</a> <!-- #branding -->
+					
+					<nav class="main-navigation">
+						<button type="button" class="toggle-menu"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="about.html">About</a></li>
+							
+							<li class="menu-item"><a href="music.html">Music</a></li>
+							<li class="menu-item"><a href="contact.html">Contact</a></li>
+						</ul> <!-- .menu -->
+					</nav> <!-- .main-navigation -->
+					<div class="mobile-menu"></div>
 				</div>
-
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 hours">17</span>
-					<span class="s2-txt1">Hours</span>
-				</div>
-
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 minutes">50</span>
-					<span class="s2-txt1">Minutes</span>
-				</div>
-
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 seconds">39</span>
-					<span class="s2-txt1">Seconds</span>
+			</header> <!-- .site-header -->
+			
+			<div class="hero">
+				<div class="slider">
+					<ul class="slides">
+						<li class="lazy-bg" data-background="dummy/slide-1.jpg">
+							<div class="container">
+								<h2 class="slide-title"> </h2>
+								<h3 class="slide-subtitle"> </h3>
+								<h3 class="slide-subtitle"> </h3>
+								
+							</div>
+						</li>
+						
+					</ul>
 				</div>
 			</div>
+			
+			<main class="main-content">
+		
+				<div class="fullwidth-block upcoming-event-section" data-bg-color="#191919">
+					<div class="container">
+						<header class="section-header">
+							<h2 class="section-title">Upcoming events</h2>
 
-			<form class="w-full flex-w flex-c-m validate-form">
+							<div class="event-nav">
+								<a class="prev" id="event-prev" href="#"><i class="fa fa-caret-left"></i></a>
+	    						<a class="next" id="event-next" href="#"><i class="fa fa-caret-right"></i></a>
+							</div> <!-- .event-nav -->
 
-				<div class="wrap-input100 validate-input where1" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input100 placeholder0 s2-txt2" type="text" name="email" placeholder="Enter Email Address">
-					<span class="focus-input100"></span>
-				</div>
-				
-				
-				<button class="flex-c-m size3 s2-txt3 how-btn1 trans-04 where1">
-					Subscribe
-				</button>
-			</form>
-		</div>
-	</div>
-
-
-
+						</header> <!-- .section-header -->
+						<div class="event-carousel">
+							
+							<div class="event">
+								<div class="entry-date">
+									<div class="date">21</div>
+									<span class="month">Aug</span>
+								</div>
+								<h2 class="entry-title"><a href="https://link.ucf.edu/program/4766">UCF Acapalooza</a></h2>
+								<p>Get to know all six groups, and even watch us perform! Find us at the Student Union in the Pegasus Ballroom from 7 pm to 9pm!</p>
+							</div> <!-- .event -->
+							
 	
+						</div> <!-- .event-carousel -->
+					</div> <!-- .container -->
+				</div> <!-- .upcoming-event-section -->
+<!--
+				<div class="fullwidth-block why-chooseus-section">
+					<div class="container">
+						<h2 class="section-title">Why choose us?</h2>
 
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/moment.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script>
-		$('.cd100').countdown100({
-			/*Set Endtime here*/
-			/*Endtime must be > current time*/
-			endtimeYear: 2018,
-			endtimeMonth: 4,
-			endtimeDate: 30,
-			endtimeHours: 0,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York"
-			//go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="feature">
+									<figure class="cut-corner">
+										<img src="dummy/medium-image-1.jpg" alt="">
+									</figure>
+									<h3 class="feature-title">Similique sunt in culpa qui officia deserunt mollitia animi laborum dolorum</h3>
+									<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+								</div> <!-- .feature -->
+								<!--
+							</div>
+							<div class="col-md-4">
+								<div class="feature">
+									<figure class="cut-corner">
+										<img src="dummy/medium-image-2.jpg" alt="">
+									</figure>
+									<h3 class="feature-title">Similique sunt in culpa qui officia deserunt mollitia animi laborum dolorum</h3>
+									<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+								</div> <!-- .feature -->
+								<!--
+							</div>
+							<div class="col-md-4">
+								<div class="feature">
+									<figure class="cut-corner">
+										<img src="dummy/medium-image-3.jpg" alt="">
+									</figure>
+									<h3 class="feature-title">Similique sunt in culpa qui officia deserunt mollitia animi laborum dolorum</h3>
+									<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+								</div> <!-- .feature -->
+								<!--
+							</div>
+						</div>
+					</div> <!-- .container -->
+					
+				</div> <!-- .why-chooseus-section -->
+				
+			</main> <!-- .main-content -->
 
-</body>
+			<footer class="site-footer">
+				<div class="container">
+					<img src="dummy/logo-footer.png" alt="Site Name">
+					
+					<address>
+						<p>University of Central Florida <br> <br> <a href="mailto:sonotedacappella@gmail.com">sonotedacappella@gmail.com</a></p> 
+					</address> 
+					
+					
+					
+					<div class="social-links">
+						<a href="https://www.facebook.com/SoNoted/"><i class="fa fa-facebook-square"></i></a>
+
+
+					</div> <!-- .social-links -->
+					
+					<p class="copy">Copyright 2018 So Noted. Themezy. All Rights Reserved.</p>
+				</div>
+			</footer> <!-- .site-footer -->
+
+		</div> <!-- #site-content -->
+
+		<script src="js/jquery-1.11.1.min.js"></script>		
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+	</body>
+
 </html>
