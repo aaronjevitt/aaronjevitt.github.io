@@ -5,7 +5,7 @@
 <html>
 <body style="min-height:300px;">
     <div>
-    <div style="width:59vw;position:relative;z-index:1;margin-top:9vh;margin-left:auto;margin-right:auto"><p style="font-size:2vmin;">Please paste your text in the box and press &ldquo;Generate Scores&rdquo; to get the Concreteness Score for your text and see how it compares, on average.</p></div>
+    <div style="width:59vw;position:relative;z-index:1;margin-top:9vh;margin-left:auto;margin-right:auto"><p style="font-size:2vmin;font-weight:bold;">Please paste your text in the box and press &ldquo;Generate Scores&rdquo; to get the Concreteness Score for your text and see how it compares, on average.</p></div>
         </div>
 <style>
 /* font styles for table */
@@ -199955,7 +199955,7 @@ function generateScore()
     var arr, total, totalcnt, verb, verbcnt, noun, nouncnt, adj, adjcnt, noclass, noclasscnt, notindict, wordcnt, i;
     total = totalcnt = verb = verbcnt = noun = nouncnt = adj = adjcnt = noclass = noclasscnt= notindict = wordcnt = i = 0;
     //Split text entry into individual word array
-    arr = document.getElementById('textentry').value.replace(/[.,\/#!$%\^&\*;:{}=\-_~()]/g,"").split(" ");
+    arr = document.getElementById('textentry').value.replace(/[.,\/#!$%\^&\*;:{}=\-_~()]/g,"").toLowerCase().split(" ");
     //Iterate through all the words
     for (i=0; i <arr.length;i++)
     {
