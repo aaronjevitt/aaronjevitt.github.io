@@ -199952,10 +199952,11 @@ var dictionary =
 
 function generateScore()
 {
+    alert("Generating Scores");
     var arr, total, totalcnt, verb, verbcnt, noun, nouncnt, adj, adjcnt, noclass, noclasscnt, notindict, wordcnt, i;
     total = totalcnt = verb = verbcnt = noun = nouncnt = adj = adjcnt = noclass = noclasscnt= notindict = wordcnt = i = 0;
     //Split text entry into individual word array
-    arr = document.getElementById('textentry').value.replace(/[.,\/#!$%\^&\*;:{}=\-_~()\n]/g,"").toLowerCase().split(" ");
+    arr = document.getElementById('textentry').value.replace(/[.,\/#!$%\^&\*;:{}=\-_~()]/g,"").replace(/[\n\t]/g," ").toLowerCase().split(" ").filter(Boolean);
     //Iterate through all the words
     for (i=0; i <arr.length;i++)
     {
