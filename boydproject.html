@@ -106,7 +106,7 @@ input
                             <th><div id="tablediv">Adj. Score</div></th>
                             <th><div id="tablediv">% Not in Dict.</div></th>
                        </tr>
-                        <tr style="height:1vh;">
+                        <tr style="height:1vw;">
                             <td>
                                 <input readonly id="totsc"  type="text"></input>
                             </td>
@@ -130,7 +130,7 @@ input
                             <th ><div id="tablediv">Rel. to Avg.</div></th>
                             
                         </tr>
-                        <tr style="height:1vh;">
+                        <tr style="height:1vw;">
                             <td>
                                 <input readonly id="totbm" type="text"></input>
                             </td>
@@ -199955,7 +199955,7 @@ function generateScore()
     var arr, total, totalcnt, verb, verbcnt, noun, nouncnt, adj, adjcnt, noclass, noclasscnt, notindict, wordcnt, i;
     total = totalcnt = verb = verbcnt = noun = nouncnt = adj = adjcnt = noclass = noclasscnt= notindict = wordcnt = i = 0;
     //Split text entry into individual word array
-    arr = document.getElementById('textentry').value.replace(/[.,\/#!$%\^&\*;:{}=\-_~()]/g,"").toLowerCase().split(" ");
+    arr = document.getElementById('textentry').value.replace(/[.,\/#!$%\^&\*;:{}=\-_~()\n]/g,"").toLowerCase().split(" ");
     //Iterate through all the words
     for (i=0; i <arr.length;i++)
     {
