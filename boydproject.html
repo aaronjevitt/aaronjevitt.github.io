@@ -31,7 +31,7 @@ input
 {
     max-height:20px;
     max-width:120px;
-    font-size:15px;
+    font-size:2vh;
     width:12vw;
     height:2vw;
 }
@@ -106,7 +106,7 @@ input
                             <th><div id="tablediv">Adj. Score</div></th>
                             <th><div id="tablediv">% Not in Dict.</div></th>
                        </tr>
-                        <tr style="height:1vw;">
+                        <tr style="height:1vh;">
                             <td>
                                 <input readonly id="totsc"  type="text"></input>
                             </td>
@@ -130,7 +130,7 @@ input
                             <th ><div id="tablediv">Rel. to Avg.</div></th>
                             
                         </tr>
-                        <tr style="height:1vw;">
+                        <tr style="height:1vh;">
                             <td>
                                 <input readonly id="totbm" type="text"></input>
                             </td>
@@ -199962,23 +199962,23 @@ function generateScore()
         //First check for a word that is actually two words
         wordcnt++;
         var word = (i==arr.length-1)?arr[i]:(arr[i] + " " +arr[i+1]);
-        var index=dictionary.findIndex(obj => obj.Word==word.toLowerCase());
+        var index=dictionary.findIndex(obj => obj.Word==word);
         // If it is we need to skip the next word next time around. If not then we will check the word by itself
         if(index!=-1)
             i++;
         else if(index==-1)
-            if(word.toLowerCase().charAt(word.length-1)=="s")
-                index=dictionary.findIndex(obj => obj.Word==word.substring(0, word.length-1).toLowerCase());
+            if(word.charAt(word.length-1)=="s")
+                index=dictionary.findIndex(obj => obj.Word==word.substring(0, word.length-1));
 
         if(index!=-1)
             i++;
         else
-            index=dictionary.findIndex(obj => obj.Word==arr[i].toLowerCase());
+            index=dictionary.findIndex(obj => obj.Word==arr[i]);
 
         //If the word by itself isn't in the dictionary
         if(index==-1)
-            if(arr[i].toLowerCase().charAt(arr[i].length-1)=="s")
-                index=dictionary.findIndex(obj => obj.Word==arr[i].substring(0, arr[i].length-1).toLowerCase());
+            if(arr[i].charAt(arr[i].length-1)=="s")
+                index=dictionary.findIndex(obj => obj.Word==arr[i].substring(0, arr[i].length-1));
 
         if(index==-1)
             notindict++;
