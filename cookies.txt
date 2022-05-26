@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.scislandclassic.com	TRUE	/	FALSE	1999999999	XSRF-TOKEN	1653590589|TLpnO0SWjy2X
+www.scislandclassic.com	TRUE	/	FALSE	1999999999	SameSite	None
+www.scislandclassic.com	TRUE	/	FALSE	1999999999	ssr-caching	cache#desc=miss#varnish=miss#dc#desc=use1
+
