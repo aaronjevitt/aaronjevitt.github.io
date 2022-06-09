@@ -24,7 +24,7 @@
   {
     try {
       let text_data = await downloadFile();
-      document.querySelector("#preview-text").textContent = text_data;
+      console.log(text_data);
     }
     catch(e) {
       alert(e.message);
